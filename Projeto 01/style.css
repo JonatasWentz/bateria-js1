@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #272a4d;
+    font-family: 'New Rocker', cursive;
+}
+
+h1 {
+    font-size: 100px;
+    color: #FFF;
+    margin-bottom: 40px;
+    font-family: 'New Rocker', cursive;
+}
+.keys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    
+}
+.key {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #FFF;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 30px;
+}
+.key.active {
+    border: 2px solid rgb(55, 134, 61);
+    color: rgb(55, 134, 61);
+}
+
+.composer {
+    width: 260px;
+    margin-top: 20px;
+    font-family: 'New Rocker', cursive;
+}
+.composer #input {
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding: 10px 15px;
+    font-family: 'New Rocker', cursive;
+}
+.composer button {
+    width: 100%;
+    height: 40px;
+    background: none;
+    border: 2px solid #FFF;
+    color: #FFF;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: 'New Rocker', cursive;
+}
+.composer button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    margin-top: 20px;
+    color: #FFF;
+    font-size: 13px;
+}
